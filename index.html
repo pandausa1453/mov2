@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Movie Library</title>
   <style>
     :root {
-      --bg-color: #008080;
+      --bg-color: #005c5c;           /* Darker teal */
       --text-color: white;
-      --button-bg: #00b3b3;
-      --button-hover: #009999;
-      --bottom-btn-bg: #00a676;
-      --bottom-btn-hover: #008f65;
+      --button-bg: #007a7a;          /* Slightly darker button teal */
+      --button-hover: #006666;
+      --bottom-btn-bg: #008a6e;
+      --bottom-btn-hover: #006f59;
     }
 
     body {
@@ -36,7 +36,7 @@
     }
 
     .movie-btn {
-      padding: 15px 10px;
+      padding: 0;
       font-size: 18px;
       border: none;
       border-radius: 8px;
@@ -46,19 +46,29 @@
       color: white;
       background-color: var(--button-bg);
       transition: background-color 0.3s;
-      display: inline-block;
-      width: 250px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: flex-start;
+      width: 250px;
+      height: 300px;
+      overflow: hidden;
     }
 
     .movie-btn img {
       width: 100%;
-      max-height: 150px;
+      height: 180px;
       object-fit: cover;
-      border-radius: 6px 6px 0 0;
-      margin-bottom: 10px;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .movie-btn span {
+      padding: 12px 8px;
+      text-align: center;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .movie-btn:hover {
@@ -98,19 +108,19 @@
   <div class="button-container">
     <a href="theamzspiderman.html" class="movie-btn">
       <img src="images/spiderman.jpg" alt="The Amazing Spider-Man">
-      The Amazing Spider-Man
+      <span>The Amazing Spider-Man</span>
     </a>
     <a href="ironman1.html" class="movie-btn">
       <img src="images/ironman1.jpg" alt="Iron Man">
-      Iron Man
+      <span>Iron Man</span>
     </a>
     <a href="ironman2.html" class="movie-btn">
       <img src="images/ironman2.jpg" alt="Iron Man 2">
-      Iron Man 2
+      <span>Iron Man 2</span>
     </a>
     <a href="tntborb.html" class="movie-btn">
-      <img src="rickybobby.jpg" >
-      Talladega Nights: The Ballad Of Ricky Bobby
+      <img src="rickybobby.jpg" alt="Talladega Nights">
+      <span>Talladega Nights: The Ballad Of Ricky Bobby</span>
     </a>
   </div>
 
