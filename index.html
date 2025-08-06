@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Library</title>
+  <style>
+    :root {
+      --bg-color: #1e1e2e;
+      --text-color: white;
+      --button-bg: #007bff;
+      --button-hover: #0056b3;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .description {
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    .movie-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 10px;
+      text-decoration: none;
+      color: white;
+      background-color: var(--button-bg);
+      transition: background-color 0.3s;
+      display: inline-block;
+      width: 250px;
+    }
+
+    .movie-btn:hover {
+      background-color: var(--button-hover);
+    }
+
+    .bottom-btn {
+      margin-top: auto;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      background-color: #28a745;
+      transition: background-color 0.3s;
+    }
+
+    .bottom-btn:hover {
+      background-color: #1e7e34;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎬 Movie Library</h1>
+  <p class="description">Movies are updated every other week! Check back often for new additions.</p>
+
+  <div class="button-container">
+    <a href="theamzspiderman.html" class="movie-btn">The Amazing Spider-man</a>
+    <a href="ironman1.html" class="movie-btn">Iron Man</a>
+    <a href="ironman2.html" class="movie-btn">Iron Man 2</a>
+    <a href="tntborb.html" class="movie-btn">Talladega Nights: The Ballad Of Ricky Bobby</a>
+  </div>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhvceZC4xlbEkCn-qjXGxK2jT__Ur42Bmd4TWYgCxeVVi0Zg/viewform?usp=dialog"
+     target="_blank" class="bottom-btn">🎞️ Suggest a Movie</a>
+
+</body>
+</html>
